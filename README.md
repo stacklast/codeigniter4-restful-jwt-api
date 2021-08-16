@@ -69,3 +69,9 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - Execute migrations `php spark migrate`
 - Add Seeder `php spark make:seeder`
 - Add fake data using Seeder class `php spark db:seed ClientSeeder`
+
+## JWT
+
+reference: [firebase/php-jwt](https://github.com/firebase/php-jwt)
+
+- Install with composer `composer require firebase/php-jwt`
