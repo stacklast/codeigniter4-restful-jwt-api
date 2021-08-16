@@ -74,6 +74,7 @@ reference [https://www.twilio.com/blog/create-secured-restful-api-codeigniter-ph
 - Add Filter `php spark make:filter` JWTAuthenticationFilter
 - Add Controller `php spark make:controller` Auth
 - Add Validator `php spark make:validation`
+- Verify Routes `php spark routes`
 
 ## JWT
 
