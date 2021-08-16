@@ -72,6 +72,8 @@ reference [https://www.twilio.com/blog/create-secured-restful-api-codeigniter-ph
 - Add Seeder `php spark make:seeder` ClientSeeder
 - Add fake data using Seeder class `php spark db:seed ClientSeeder`
 - Add Filter `php spark make:filter` JWTAuthenticationFilter
+- Add Controller `php spark make:controller` Auth
+- Add Validator `php spark make:validation`
 
 ## JWT
 
