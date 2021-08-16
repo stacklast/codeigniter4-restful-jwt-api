@@ -64,11 +64,14 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 ## Project Used Commands
 
+reference [https://www.twilio.com/blog/create-secured-restful-api-codeigniter-php](https://www.twilio.com/blog/create-secured-restful-api-codeigniter-php)
+
 - Load Server `php spark serve`
 - Create migration `php spark migrate:create`
 - Execute migrations `php spark migrate`
-- Add Seeder `php spark make:seeder`
+- Add Seeder `php spark make:seeder` ClientSeeder
 - Add fake data using Seeder class `php spark db:seed ClientSeeder`
+- Add Filter `php spark make:filter` JWTAuthenticationFilter
 
 ## JWT
 
