@@ -81,3 +81,37 @@ reference [https://www.twilio.com/blog/create-secured-restful-api-codeigniter-ph
 reference: [firebase/php-jwt](https://github.com/firebase/php-jwt)
 
 - Install with composer `composer require firebase/php-jwt`
+
+## Swagger Steps in Codeigniter
+
+### Swagger UI
+
+Download Files from [https://github.com/swagger-api/swagger-ui/tree/master/dist](https://github.com/swagger-api/swagger-ui/tree/master/dist)
+
+- Add html content over app/Views/
+- Add all css and js files over public/
+- Change urls to use <?= base_url('assets/swagger-ui.css') ?>
+- Specify the url of the json
+
+### Swagger PHP
+
+Reference [https://github.com/zircote/swagger-php](https://github.com/zircote/swagger-php)
+
+Install swagger-php with composer `composer require zircote/swagger-php`
+
+- Create a php file over public/
+- Add call and use OpenApi\Serializer
+
+```php
+<?php
+
+require("../../vendor/autoload.php");
+
+$openapi = \OpenApi\Generator::scan(['../../app/Controllers/']);
+
+header('Content-Type: application/json');
+echo $openapi->toJSON();
+
+```
+
+- Finally use Add annotations to your php files over app/Controllers

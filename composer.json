@@ -7,7 +7,8 @@
 	"require": {
 		"php": "^7.3||^8.0",
 		"codeigniter4/framework": "^4",
-		"firebase/php-jwt": "^5.4"
+		"firebase/php-jwt": "^5.4",
+		"zircote/swagger-php": "^3.2"
 	},
 	"require-dev": {
 		"fakerphp/faker": "^1.9",
